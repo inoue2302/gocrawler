@@ -159,7 +159,7 @@ func (self *Scraiper) AddProject() {
 	self.project.CreatedAt = nowTime.Format("2006-01-02 15:04:05")
 	self.project.UpdatedAt = nowTime.Format("2006-01-02 15:04:05")
 	//コネクション作成
-	db, err := sql.Open("mysql", "job_user:23025580@/freelance_job")
+	db, err := sql.Open("mysql", "job_user:XXXXXXX@/freelance_job")
 	if err != nil {
 		panic(err.Error())
 	}
