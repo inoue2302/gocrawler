@@ -179,4 +179,5 @@ func (self *Scraiper) AddProject() {
 	if err2 != nil {
 		panic(err2.Error())
 	}
+	db.Close()
 }
